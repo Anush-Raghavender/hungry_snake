@@ -129,7 +129,7 @@ public class SnakeGame extends JPanel implements ActionListener {
         g.drawString("Score: " + score, (WIDTH - 50) / 2, HEIGHT / 2 + 20);
     }
 
-    //Check if snake ate apple, increase score by 1, length of snake by 1, spawn normal apple, if score is divisible by 5 then spawn bonus apple
+    //Check if snake ate apple, increase score by 1, increase length of snake by 1, spawn normal apple, if score is divisible by 5 spawn bonus apple
     private void checkApple() {
         if (!bonusAppleVisible && (x[0] == apple_x) && (y[0] == apple_y)) {
             dots++;
