@@ -70,6 +70,7 @@ public class SnakeGame extends JPanel implements ActionListener {
         bonusApple = iib.getImage();
     }
 
+    //Start game
     private void initGame() {
         dots = 3;
 
@@ -91,7 +92,7 @@ public class SnakeGame extends JPanel implements ActionListener {
         doDrawing(g);
     }
 
-    //Draw the apple, bonus Apple, snake head, snake body & score
+    //Draw the apple, bonus apple, snake head, snake body & score
     private void doDrawing(Graphics g) {
         if (inGame) {
             if (bonusAppleVisible) {
@@ -118,6 +119,7 @@ public class SnakeGame extends JPanel implements ActionListener {
         }
     }
 
+    //Display game over text
     private void gameOver(Graphics g) {
         String msg = "Game Over";
         Font small = new Font("Helvetica", Font.BOLD, 14);
